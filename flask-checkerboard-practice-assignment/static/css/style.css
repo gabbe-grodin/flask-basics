@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    padding: 10px;
+    margin: 20px auto;
+    width: 400px;
+}
+
+table {
+    margin: 20px auto;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.color1 {
+    background-color: rgb(255, 7, 7);
+}
+.color2 {
+    background-color: rgb(255, 230, 7);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Playground</title>
+
+    <style>
+        body {
+          background-color: linen;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            border-radius: 18%;
+            margin: 15px;
+            background-color: rgb(0, 0, 199);
+            border: 2px solid rgb(121, 193, 145);
+        }
+        .blue {
+            background-color: rgb(0, 0, 199);
+            border: 2px solid rgb(121, 193, 145);
+        }
+        .red {
+            background-color: rgb(255, 7, 7);
+            border: 2px solid rgb(138, 0, 103);
+        }
+        .yellow {
+            background-color: rgb(255, 230, 7);
+            border: 2px solid rgb(255, 247, 173);
+        }
+        .green {
+            background-color: rgb(0, 152, 38);
+            border: 2px solid rgb(179, 231, 255);
+        }
+        </style>
+
+</head>
+<body>
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;font-weight: 800;">Welcome!</h1>
+    
+    <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+
+        {% for x in range(0,times): %}
+
+            {% if color == "red" %}
+                <div class="box red">
+                </div>
+
+            {% elif color == "yellow" %}
+                <div class="box yellow">
+                </div>
+
+            {% elif color == "green" %}
+                <div class="box green">
+                </div>
+
+            {% else %}
+                <div class="box blue">
+                </div>
+
+            {% endif %}
+
+        {% endfor %}
+
+
+    </div>   
+
+
+</body>
+</html>
